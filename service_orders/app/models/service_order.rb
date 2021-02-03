@@ -6,8 +6,4 @@ class ServiceOrder < ApplicationRecord
     params[:customer] = customer
     create(params)
   end
-
-  def start!
-    update(started_at: Time.zone.now)
-  end
 end
