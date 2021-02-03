@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_02_201224) do
+ActiveRecord::Schema.define(version: 2021_02_03_204150) do
 
   create_table "customers", force: :cascade do |t|
     t.string "name"
@@ -21,4 +21,15 @@ ActiveRecord::Schema.define(version: 2021_02_02_201224) do
     t.index ["email"], name: "index_customers_on_email", unique: true
   end
 
+  create_table "service_orders", force: :cascade do |t|
+    t.bigint "customer_id", null: false
+    t.text "description"
+    t.datetime "started_at"
+    t.datetime "finished_at"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["customer_id"], name: "index_service_orders_on_customer_id"
+  end
+
+  add_foreign_key "service_orders", "customers"
 end
