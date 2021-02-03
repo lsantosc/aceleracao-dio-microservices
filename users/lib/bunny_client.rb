@@ -3,7 +3,7 @@
 class BunnyClient
   class << self
     def connect!
-      @connection = Bunny.new(ENV['CLOUDAQMP_URL'])
+      @connection = Bunny.new(ENV['CLOUDAMQP_URL'])
       @connection.start
       @channel = @connection.create_channel
       @fan_out = @channel.fanout('aceleracao_dio_users.out')
