@@ -2,7 +2,7 @@
 
 class Customer < ApplicationRecord
   validates :name, :email, presence: true
-  validates :uuid, :email, uniqueness: true
+  validates :email, uniqueness: true
 
   def self.create_or_update_from_bunny(payload)
     customer = find_or_initialize_by(email: payload['email'])
