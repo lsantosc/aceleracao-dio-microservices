@@ -4,6 +4,8 @@ Evento realizado entre os dias 01/02/2021 e 05/02/2021
 
 ## Microsserviços e Comunicação Assíncrona Com Ruby e RabbitMQ na Prática
 
+![Slide](https://drive.google.com/file/d/1SqsToLomUNzotukQRO7SqiehbwgfFYq4/view?usp=sharing)
+
 Implemente um microsserviço assíncrono trabalhando com rabbitMQ, um dos principais serviços de mensageria utilizado no mercado.
 
 ## Microsserviço Users
