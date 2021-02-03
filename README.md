@@ -8,6 +8,8 @@ Implemente um microsserviço assíncrono trabalhando com rabbitMQ, um dos princi
 
 ## Microsserviço Users
 
+### Setup do projeto
+
 ```sh
 bundle install
 ```
@@ -16,9 +18,16 @@ bundle install
 rails db:setup
 ```
 
+### Executando o projeto
+
 ```sh
 rails server -p 3001
 ```
+
+### Criando um User
+
+METHOD: Post
+http://localhost:3001/users
 
 ## Microsserviço ServiceOrders
 
@@ -30,9 +39,16 @@ bundle install
 rails db:setup
 ```
 
+### Executando o projeto
+
 ```sh
 rails server -p 3002
 ```
+
+### Criando uma ServiceOrder
+
+METHOD: Post
+http://localhost:3002/service_orders
 
 ## Referências
 
