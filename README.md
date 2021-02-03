@@ -26,7 +26,7 @@ rails server -p 3001
 
 ### Criando um User
 
-METHOD: Post
+POST:
 http://localhost:3001/users
 
 ## Microsserviço ServiceOrders
@@ -47,7 +47,7 @@ rails server -p 3002
 
 ### Criando uma ServiceOrder
 
-METHOD: Post
+POST:
 http://localhost:3002/service_orders
 
 ## Referências
