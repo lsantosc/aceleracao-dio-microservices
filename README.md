@@ -36,9 +36,9 @@ rails server -p 3002
 
 ## Referências
 
-- ![Microsoft estilo de arquitetura de microsserviços](https://docs.microsoft.com/pt-br/azure/architecture/guide/architecture-styles/microservices)
-- ![RedHat - O que é arquitetura de microsserviços?](https://www.redhat.com/pt-br/topics/microservices)
-- ![Mastering Chaos - A Netflix Guide to Microservices](https://www.youtube.com/watch?v=CZ3wIuvmHeM&ab_channel=InfoQ)
-- ![RabbitMQ](https://www.rabbitmq.com/)
-- ![CloudAMQP](https://www.cloudamqp.com/)
-- ![RabbitMQ Hello World](https://www.rabbitmq.com/tutorials/tutorial-one-ruby.html)
+- [Microsoft estilo de arquitetura de microsserviços](https://docs.microsoft.com/pt-br/azure/architecture/guide/architecture-styles/microservices)
+- [RedHat - O que é arquitetura de microsserviços?](https://www.redhat.com/pt-br/topics/microservices)
+- [Mastering Chaos - A Netflix Guide to Microservices](https://www.youtube.com/watch?v=CZ3wIuvmHeM&ab_channel=InfoQ)
+- [RabbitMQ](https://www.rabbitmq.com/)
+- [CloudAMQP](https://www.cloudamqp.com/)
+- [RabbitMQ Hello World](https://www.rabbitmq.com/tutorials/tutorial-one-ruby.html)
