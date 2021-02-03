@@ -16,6 +16,10 @@ bundle install
 rails db:setup
 ```
 
+```sh
+rails server -p 3001
+```
+
 ## Microsserviço ServiceOrders
 
 ```sh
@@ -24,6 +28,10 @@ bundle install
 
 ```sh
 rails db:setup
+```
+
+```sh
+rails server -p 3002
 ```
 
 ## Referências
