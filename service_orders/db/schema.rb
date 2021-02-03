@@ -12,19 +12,13 @@
 
 ActiveRecord::Schema.define(version: 2021_02_02_201224) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-  enable_extension "uuid-ossp"
-
   create_table "customers", force: :cascade do |t|
-    t.uuid "uuid", default: -> { "uuid_generate_v4()" }, null: false
     t.string "name"
     t.string "email"
     t.string "identification_code"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["identification_code"], name: "index_customers_on_identification_code", unique: true
-    t.index ["uuid"], name: "index_customers_on_uuid", unique: true
+    t.index ["email"], name: "index_customers_on_email", unique: true
   end
 
 end

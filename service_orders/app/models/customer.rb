@@ -5,7 +5,7 @@ class Customer < ApplicationRecord
   validates :uuid, :email, uniqueness: true
 
   def self.create_or_update_from_bunny(payload)
-    customer = find_or_initialize_by(uuid: payload['uuid'])
+    customer = find_or_initialize_by(email: payload['email'])
     customer.assign_attributes(payload.slice(*customer.attributes.keys))
     customer.save!
   end
