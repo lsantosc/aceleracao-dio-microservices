@@ -57,6 +57,7 @@ http://localhost:3002/service_orders
 - [Microsoft estilo de arquitetura de microsserviços](https://docs.microsoft.com/pt-br/azure/architecture/guide/architecture-styles/microservices)
 - [RedHat - O que é arquitetura de microsserviços?](https://www.redhat.com/pt-br/topics/microservices)
 - [Mastering Chaos - A Netflix Guide to Microservices](https://www.youtube.com/watch?v=CZ3wIuvmHeM&ab_channel=InfoQ)
+- [Introdução teórica aos Microservices](https://www.anchietajunior.com/posts/microservices-introduction/)
 - [RabbitMQ](https://www.rabbitmq.com/)
 - [CloudAMQP](https://www.cloudamqp.com/)
 - [RabbitMQ Hello World](https://www.rabbitmq.com/tutorials/tutorial-one-ruby.html)
