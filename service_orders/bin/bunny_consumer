@@ -8,7 +8,7 @@ channel = connection.create_channel
 
 queue = channel.queue('aceleracao_dio_service_orders.in', durable: true, auto_delete: false)
 
-puts "\nStarting bunny consumer!"
+puts "\nStarting consumer!"
 
 fanout_name = 'aceleracao_dio_users.out'
 queue.bind(channel.exchange(fanout_name, type: 'fanout'))
@@ -16,7 +16,7 @@ puts "[consumer] #{queue.name} binds to #{fanout_name}"
 
 queue.subscribe do |d_info, properties, payload|
   BunnyConsumer.call!(properties, payload)
-  puts "[consumer] #{queue.name} received #{properties[:type]}, from #{properties[:app_id]}: #{payload}"
+  puts "[consumer] #{queue.name} received #{properties[:type]}, from #{properties[:app_id]}: #{payload}\n"
 end
 
 begin
