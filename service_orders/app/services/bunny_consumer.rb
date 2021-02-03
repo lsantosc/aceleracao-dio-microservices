@@ -1,5 +1,5 @@
 class BunnyConsumer
-  VALID_MODELS = { 'User': 'Customer' }
+  VALID_MODELS = { 'User' => 'Customer' }
 
   class << self
     def call!(properties, payload)

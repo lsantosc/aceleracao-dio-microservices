@@ -3,7 +3,7 @@ class AddUuidToUsers < ActiveRecord::Migration[6.1]
     enable_extension 'plpgsql'
     enable_extension 'uuid-ossp'
 
-    add_column :users, :uuid, :uuid, null: true
+    add_column :users, :uuid, :uuid, default: 'uuid_generate_v4()', null: true
 
     User.find_each(batch_size: 250) do |user|
       user.update_column(:uuid, SecureRandom.uuid)

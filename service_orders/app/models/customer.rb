@@ -6,7 +6,7 @@ class Customer < ApplicationRecord
 
   def self.create_or_update_from_bunny(payload)
     customer = find_or_initialize_by(uuid: payload['uuid'])
-    customer.assign_attributes(payload.slice(*customer.attributes))
+    customer.assign_attributes(payload.slice(*customer.attributes.keys))
     customer.save!
   end
 end
